@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -78,7 +79,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureDatabricksDeltaLakeDataset2",
+						"referenceName": "AzureDatabricksDeltaLakeDataset1",
 						"type": "DatasetReference"
 					}
 				]
