@@ -78,7 +78,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureDatabricksDeltaLakeDataset1",
+						"referenceName": "AzureDatabricksDeltaLakeDataset2",
 						"type": "DatasetReference"
 					}
 				]
