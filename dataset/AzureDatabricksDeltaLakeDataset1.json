@@ -1,0 +1,45 @@
+{
+	"name": "AzureDatabricksDeltaLakeDataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default",
+			"table": "flight_data_ext"
+		},
+		"schema": [
+			{
+				"name": "FL_DATE",
+				"type": "date"
+			},
+			{
+				"name": "DEP_DELAY",
+				"type": "integer"
+			},
+			{
+				"name": "ARR_DELAY",
+				"type": "integer"
+			},
+			{
+				"name": "AIR_TIME",
+				"type": "integer"
+			},
+			{
+				"name": "DISTANCE",
+				"type": "integer"
+			},
+			{
+				"name": "DEP_TIME",
+				"type": "float"
+			},
+			{
+				"name": "ARR_TIME",
+				"type": "float"
+			}
+		]
+	}
+}

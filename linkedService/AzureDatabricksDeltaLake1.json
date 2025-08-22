@@ -1,0 +1,12 @@
+{
+	"name": "AzureDatabricksDeltaLake1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLake",
+		"typeProperties": {
+			"domain": "https://adb-1938817589811431.11.azuredatabricks.net",
+			"clusterId": "0821-154129-okchlyhu",
+			"workspaceResourceId": "/subscriptions/4fad2e91-a740-4ee4-8af9-f210a084a50e/resourceGroups/prac_adf_interview/providers/Microsoft.Databricks/workspaces/migrationonpremjpai"
+		}
+	}
+}
