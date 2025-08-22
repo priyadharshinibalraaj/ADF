@@ -33,7 +33,7 @@
 				}
 			},
 			{
-				"name": "Copy data from Blob",
+				"name": "Copy data from Blob to staging",
 				"type": "Copy",
 				"dependsOn": [
 					{
