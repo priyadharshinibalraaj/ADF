@@ -22,11 +22,10 @@
 					"value": "@dataset().fileName",
 					"type": "Expression"
 				},
-				"folderPath": {
+				"fileSystem": {
 					"value": "@dataset().folderPath",
 					"type": "Expression"
-				},
-				"fileSystem": "raw"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
