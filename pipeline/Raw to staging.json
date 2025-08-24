@@ -102,7 +102,17 @@
 				"inputs": [
 					{
 						"referenceName": "raw_data",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@concat('raw/',pipeline().parameters.SourceDate)",
+								"type": "Expression"
+							},
+							"fileName": {
+								"value": "@pipeline().parameters.FileName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
