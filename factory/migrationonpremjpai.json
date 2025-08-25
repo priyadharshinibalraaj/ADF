@@ -1,0 +1,12 @@
+{
+	"name": "migrationonpremjpai",
+	"properties": {
+		"globalParameters": {
+			"source_container": {
+				"type": "string",
+				"value": "raw"
+			}
+		}
+	},
+	"location": "eastus"
+}
