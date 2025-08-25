@@ -5,6 +5,10 @@
 			"source_container": {
 				"type": "string",
 				"value": "raw"
+			},
+			"sink_container": {
+				"type": "string",
+				"value": "staging"
 			}
 		}
 	},
