@@ -127,6 +127,45 @@
 						}
 					}
 				]
+			},
+			{
+				"name": "Run notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/vinoth.rangan@outlook.com/create_secret_scope",
+					"baseParameters": {
+						"container": "staging",
+						"storage_account": "adfstoragejpai",
+						"sourceDate": {
+							"value": "@pipeline().parameters.SourceDate",
+							"type": "Expression"
+						},
+						"fileName": {
+							"value": "@pipeline().parameters.FileName",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"parameters": {
