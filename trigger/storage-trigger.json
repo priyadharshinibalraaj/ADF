@@ -10,8 +10,8 @@
 					"type": "PipelineReference"
 				},
 				"parameters": {
-					"SourceDate": "formatDatetime(trigger().startTime,'yyyy-MM-dd')",
-					"FileName": "@concat('patient_treatment_',formatDatetime(trigger().startTime,'yyyy-MM-dd'),'.csv')"
+					"SourceDate": "formatDateTime(trigger().startTime,'yyyy-MM-dd')",
+					"FileName": "@concat('patient_treatment_',formatDateTime(trigger().startTime,'yyyy_MM_dd'),'.csv')"
 				}
 			}
 		],
