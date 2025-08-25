@@ -49,7 +49,7 @@
 					{
 						"activity": "Get Metadata1",
 						"dependencyConditions": [
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
