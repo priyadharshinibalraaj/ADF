@@ -1,0 +1,25 @@
+{
+	"name": "storage-trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Raw to staging",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/raw/blobs/",
+			"blobPathEndsWith": "patient_*.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4fad2e91-a740-4ee4-8af9-f210a084a50e/resourceGroups/prac_adf_interview/providers/Microsoft.Storage/storageAccounts/adfstoragejpai",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

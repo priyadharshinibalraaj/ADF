@@ -170,8 +170,7 @@
 		],
 		"parameters": {
 			"SourceDate": {
-				"type": "string",
-				"defaultValue": "2025-08-21"
+				"type": "string"
 			},
 			"FileName": {
 				"type": "string",
