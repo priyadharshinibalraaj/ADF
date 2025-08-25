@@ -173,8 +173,7 @@
 				"type": "string"
 			},
 			"FileName": {
-				"type": "string",
-				"defaultValue": "patient_treatment.csv"
+				"type": "string"
 			}
 		},
 		"annotations": []
