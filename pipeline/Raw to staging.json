@@ -20,7 +20,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folderPath": {
-								"value": "@concat(pipeline().globalParameters.source_container,pipeline().parameters.SourceDate)",
+								"value": "@concat(pipeline().globalParameters.source_container,'/',pipeline().parameters.SourceDate)",
 								"type": "Expression"
 							},
 							"fileName": {
@@ -101,7 +101,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folderPath": {
-								"value": "@concat(pipeline().globalParameters.source_container,pipeline().parameters.SourceDate)",
+								"value": "@concat(pipeline().globalParameters.source_container,'/',pipeline().parameters.SourceDate)",
 								"type": "Expression"
 							},
 							"fileName": {
@@ -117,7 +117,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folderPath": {
-								"value": "@concat(pipeline().globalParameters.sink_container,pipeline().parameters.SourceDate)",
+								"value": "@concat(pipeline().globalParameters.sink_container,'/',pipeline().parameters.SourceDate)",
 								"type": "Expression"
 							},
 							"fileName": {
